@@ -1,3 +1,7 @@
+app.get("/", (req, res) => {
+    res.send("✅ Server läuft");
+});
+
 import express from "express";
 import fetch from "node-fetch";
 

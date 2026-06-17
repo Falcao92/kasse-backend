@@ -1,6 +1,4 @@
-app.get("/", (req, res) => {
-    res.send("✅ Server läuft");
-});
+
 
 import express from "express";
 import fetch from "node-fetch";
@@ -8,6 +6,10 @@ import fetch from "node-fetch";
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+    res.send("✅ Server läuft");
+});
 
 // 🔒 ENV Variablen (in Render setzen!)
 const TENANT = process.env.TENANT_ID;
